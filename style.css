@@ -170,6 +170,44 @@ section {
 }
 
 /* ════════════════════════════
+   GOOGLE SLIDES SECTION
+════════════════════════════ */
+.slides-section {
+  padding: 5rem 6vw;
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.slides-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--border);
+  background: var(--card);
+  padding: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.slides-wrapper iframe {
+  display: block;
+  width: 100%;
+  max-width: 960px;
+  height: 569px;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .slides-wrapper {
+    padding: 0.5rem;
+  }
+  .slides-wrapper iframe {
+    height: 280px;
+  }
+}
+
+/* ════════════════════════════
    IDEATION
 ════════════════════════════ */
 .ideation-block {
